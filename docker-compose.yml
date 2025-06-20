@@ -1,0 +1,13 @@
+services:
+  mageai:
+    build: .
+    container_name: mageai
+    ports:
+      - "6789:6789"
+    volumes:
+      - ./mage_data:/home/src/mage_data
+      - ./data/input:/home/src/data/input # CSV Files for the test
+      - ./data/output:/home/src/data/output
+    environment:
+      - ENV=dev
+    restart: unless-stopped
