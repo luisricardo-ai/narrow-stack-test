@@ -1,0 +1,16 @@
+## Removing output files
+data/output/*
+
+## Removing unnecessary Mage files
+mage_data/.cache
+mage_data/.file_versions
+mage_data/.operation_history
+mage_data/.ssh_tunnel
+mage_data/default_repo
+mage-ai.db
+
+mage_data/*/__pycache__
+mage_data/pipelines/*/__pycache__
+
+mage_data/pipelines/*/.logs
+mage_data/pipelines/*/.variables
